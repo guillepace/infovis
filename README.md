@@ -8,3 +8,6 @@ Itba
 (https://en.wikipedia.org/wiki/Markdown)
 (https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 (https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+
+[google import loc) (Location History JSON Converter)
+
