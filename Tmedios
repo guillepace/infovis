@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Scatterplot</title>
+<script src="https://cdn.jsdelivr.net/npm/vega@5.17.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-lite@4.17.0"></script>
+<script src="https://cdn.jsdelivr.net/npm/vega-embed@6.12.2"></script>
+</head>
+<body>
+  <div id="vis"></div>
+
+<script>
+var vlSpec = {
+$schema: "https://vega.github.io/schema/vega-lite/v4.json",
+description: "fav y RTs de los tuits",
+width : 400,
+height : 300,
+data: { "url": "https://aaizemberg.github.io/infovis/data/TwitterUserOrder.tsv"},
+mark: {"type": "circle", "tooltip": {"content": "data"} },
+encoding: {
+x : {"field": "fav", "type": "quantitative"},
+y : {"field": "retweet", "type": "quantitative"},
+color : {"field": "screen_name", "type" : "nominal", "title" : "medio" }
+}
+};
+vegaEmbed('div#vis', vlSpec);
+</script>
+
+</body>
+</html>
