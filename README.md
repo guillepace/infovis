@@ -11,3 +11,4 @@ Itba
 
 [google import loc) (Location History JSON Converter)
 
+[Google Takeout]  https://guillepace.github.io/infovis/2020/GoogleTakeOut.html
